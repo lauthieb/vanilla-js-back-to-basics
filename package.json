@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "vanilla-js-back-to-basics",
+  "version": "1.0.0",
+  "description": "Talk about Vanilla JS 🍦",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
