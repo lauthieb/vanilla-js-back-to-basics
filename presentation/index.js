@@ -37,7 +37,9 @@ const images = {
   wtf: require("../assets/wtf.gif"),
   wow: require("../assets/wow.gif"),
   nice: require("../assets/nice.gif"),
-  vanillaJS: require("../assets/vanilla-js.png")
+  vanillaJS: require("../assets/vanilla-js.png"),
+  wordCloudJS: require("../assets/word-cloud-js.png"),
+  fun: require("../assets/fun.gif")
 };
 
 export default class Presentation extends React.Component {
@@ -53,9 +55,14 @@ export default class Presentation extends React.Component {
             🍦 Vanilla JS
           </Heading>
           <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
-            #backToBasics
+            #backToBasics / @lauthieb
           </Text>
         </Slide>
+
+        <Slide
+          bgImage={images.wordCloudJS.replace("/", "")}
+          transition={["fade"]}
+        />
 
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
@@ -72,8 +79,72 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Variable Scope
-            {/* https://jsfiddle.net/lauthieb/69zkdLoj/ */}
           </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            {"ES6: let & const <3"}
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Hoisting
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Closures
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Prototypes
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            ES6: Syntactic sugar
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            The THIS keyword
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Immutability
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Promise, async & await
+          </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Have fun !
+          </Heading>
+        </Slide>
+
+        <Slide bgImage={images.fun.replace("/", "")} transition={["fade"]} />
+
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Thanks !
+          </Heading>
+          <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
+            🍦 Vanilla JS #backToBasics / @lauthieb
+          </Text>
         </Slide>
       </Deck>
     );
