@@ -1,6 +1,6 @@
 # vanilla-js-back-to-basics
 
-Talk about Vanilla JS
+Talk about Vanilla JS 🍦
 
 ## Contents
 
