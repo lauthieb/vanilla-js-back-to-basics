@@ -108,19 +108,13 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            ES6: Syntactic sugar
+            ES6: Classes == Syntactic sugar
           </Heading>
         </Slide>
 
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             The THIS keyword
-          </Heading>
-        </Slide>
-
-        <Slide transition={["zoom"]} bgColor="secondary">
-          <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            Immutability
           </Heading>
         </Slide>
 
