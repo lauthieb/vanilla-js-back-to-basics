@@ -36,6 +36,7 @@ const theme = createTheme(
 
 const images = {
   axa: require("../assets/axa.png"),
+  city: require("../assets/city.jpg"),
   wtf: require("../assets/wtf.gif"),
   wow: require("../assets/wow.gif"),
   nice: require("../assets/nice.gif"),
@@ -65,6 +66,31 @@ export default class Presentation extends React.Component {
             width="80"
             margin="24px auto"
           />
+        </Slide>
+
+        <Slide
+          transition={["fade"]}
+          bgImage={images.city.replace("/", "")}
+          bgDarken={0.8}
+        >
+          <Heading fit caps lineHeight={1} textColor="primary">
+            About me
+          </Heading>
+          <Text textColor="white" textSize="1.8em" margin="30px 0 0 0">
+            👨 Laurent Thiebault
+          </Text>
+          <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
+            💼 Software Engineer
+          </Text>
+          <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
+            🏢 AXA France
+          </Text>
+          <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
+            ♥️ open source, music & 🍺
+          </Text>
+          <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
+            🐦 @lauthieb
+          </Text>
         </Slide>
 
         <Slide
@@ -131,11 +157,13 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        {/*
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Promise, async & await
           </Heading>
         </Slide>
+        */}
 
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
@@ -152,6 +180,11 @@ export default class Presentation extends React.Component {
           <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
             🍦 Vanilla JS #backToBasics / @lauthieb
           </Text>
+          <Image
+            src={images.axa.replace("/", "")}
+            width="80"
+            margin="24px auto"
+          />
         </Slide>
       </Deck>
     );
