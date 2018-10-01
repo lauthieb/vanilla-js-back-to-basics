@@ -11,7 +11,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Image
 } from "spectacle";
 
 // Import theme
@@ -34,10 +35,12 @@ const theme = createTheme(
 );
 
 const images = {
+  axa: require("../assets/axa.png"),
   wtf: require("../assets/wtf.gif"),
   wow: require("../assets/wow.gif"),
   nice: require("../assets/nice.gif"),
   vanillaJS: require("../assets/vanilla-js.png"),
+  vanillaJSGif: require("../assets/vanilla-js.gif"),
   wordCloudJS: require("../assets/word-cloud-js.png"),
   fun: require("../assets/fun.gif")
 };
@@ -57,10 +60,20 @@ export default class Presentation extends React.Component {
           <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
             #backToBasics / @lauthieb
           </Text>
+          <Image
+            src={images.axa.replace("/", "")}
+            width="80"
+            margin="24px auto"
+          />
         </Slide>
 
         <Slide
           bgImage={images.wordCloudJS.replace("/", "")}
+          transition={["fade"]}
+        />
+
+        <Slide
+          bgImage={images.vanillaJSGif.replace("/", "")}
           transition={["fade"]}
         />
 
@@ -108,13 +121,13 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            ES6: Classes == Syntactic sugar
+            The THIS keyword
           </Heading>
         </Slide>
 
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            The THIS keyword
+            ES6: Classes === Syntactic sugar
           </Heading>
         </Slide>
 
