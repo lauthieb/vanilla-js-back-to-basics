@@ -35,7 +35,6 @@ const theme = createTheme(
 );
 
 const images = {
-  axa: require("../assets/axa.png"),
   city: require("../assets/city.jpg"),
   wtf: require("../assets/wtf.gif"),
   wow: require("../assets/wow.gif"),
@@ -61,11 +60,6 @@ export default class Presentation extends React.Component {
           <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
             #backToBasics / @lauthieb
           </Text>
-          <Image
-            src={images.axa.replace("/", "")}
-            width="80"
-            margin="24px auto"
-          />
         </Slide>
 
         <Slide
@@ -83,7 +77,7 @@ export default class Presentation extends React.Component {
             💼 Software Engineer
           </Text>
           <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
-            🏢 AXA France
+            🏢 GensDeConfiance
           </Text>
           <Text textColor="white" textSize="1.8em" margin="10px 0 0 0">
             ♥️ open source, music & 🍺
@@ -180,11 +174,6 @@ export default class Presentation extends React.Component {
           <Text margin="20px 0 0" textColor="tertiary" size={3} bold>
             🍦 Vanilla JS #backToBasics / @lauthieb
           </Text>
-          <Image
-            src={images.axa.replace("/", "")}
-            width="80"
-            margin="24px auto"
-          />
         </Slide>
       </Deck>
     );
